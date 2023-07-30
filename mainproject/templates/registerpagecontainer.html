@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<center>
+
+<h1>Register page for container</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>
+                    <label>Name</label>
+                </td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>IDNO</label>
+                </td>
+                <td>
+                    <input type="text" name="idno">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Price</label>
+                </td>
+                <td>
+                    <input type="text" name="price">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Picture</label>
+                </td>
+                <td>
+                    <input type="file" name="picture">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Save">
+                </td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>
